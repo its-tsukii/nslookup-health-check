@@ -1,32 +1,36 @@
 name: Scheduled Site Health Check
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC, adjust as needed
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
 
 jobs:
   run-health-check:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Set up Python 3.x
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install requests
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
-    - name: Run health check script
-      run: python check_websites_txt.py
+      - name: Run health check script
+        run: python check_websites_txt.py
 
-    - name: Upload the log file as artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: health-check-log
-        path: website_check_log.txt
+      - name: Upload the log file as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: health-check-log
+          path: website_check_log.txt
+

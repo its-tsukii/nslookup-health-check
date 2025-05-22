@@ -1,0 +1,5 @@
+1. https://www.iitm.ac.in/ --> working
+2. https://www.trainwithshubham.com/ --> working
+3. https://aws.amazon.com/ --> working
+4. https://cloud.google.com/ --> working
+5. https://www.microsoft.com/ --> working

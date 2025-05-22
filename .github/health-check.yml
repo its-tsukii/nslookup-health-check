@@ -23,10 +23,10 @@ jobs:
         pip install requests
 
     - name: Run health check script
-      run: python check_websites_txt.py
+      run: python check_websites_doc.py
 
     - name: Upload the log file as artifact
       uses: actions/upload-artifact@v3
       with:
         name: health-check-log
-        path: website_check_log.txt
+        path: website_check_log.docx

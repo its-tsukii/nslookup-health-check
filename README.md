@@ -5,6 +5,11 @@
 
 ---
 
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/its-tsukii/nslookup-health-check/health-check.yml?branch=main)
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![License](https://img.shields.io/github/license/its-tsukii/nslookup-health-check)
+
+---
 ## What Is This Magical Thing? ✨
 
 Ever wondered if your favorite websites are secretly plotting to go down on you?  
@@ -50,6 +55,15 @@ python check_websites_doc.py
 ```
 Marvel at the website_check_log.docx report.
 
+Screenshots:
+1.Workflow
+
+![actions](/screenshots/actions.png)
+
+2.Docx file
+
+![Sample Report](screenshots/docx.png)
+
 Bonus Round: Automation! ⚙️
 Want this health check to run automatically?
 Set it up in GitHub Actions and let the robots do the work while you sip coffee ☕.
@@ -62,4 +76,4 @@ No websites were harmed during these health checks.
 Your cat’s approval is not guaranteed.
 
 Made with ❤️ and a bit of caffeine by Aayush Kukade
-LinkedIn | GitHub | Medium
+[LinkedIn](https://www.linkedin.com/in/aayushkukade/) | [GitHub](https://github.com/its-tsukii/) | [Medium](https://medium.com/@sroy10012001)

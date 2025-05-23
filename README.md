@@ -64,6 +64,9 @@ Screenshots:
 
 ![Sample Report](screenshots/docx.png)
 
+Tips for workflow :
+<br> After the workflow successfull build you can download the docx file from the github actions artifact located at actions>artifact>health check logs
+
 Bonus Round: Automation! ⚙️
 Want this health check to run automatically?
 Set it up in GitHub Actions and let the robots do the work while you sip coffee ☕.
